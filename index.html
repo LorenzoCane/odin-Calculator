@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="author" content="Lorenzo Cane">
+        <meta name="description" content="Odin Project - Calculator">
+        <title>Vanilla Calculator</title>
+        <link rel="stylesheet" href="calculatorStyle.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="calculatorContainer">
+                <div class="dispaly">
+                    <span class="valueScreen" id="userInput"></span>
+                    <span class="valueScreen" id="results"></span>
+                </div>
+                
+                <div class="keybord">
+                    <div class="row" id="row1">
+                        <button class="allClean" id="allClean" data-type="reset">AC</button>
+                        <button class="clear" id="backspace" data-type="backspace">C</button>
+                        <button class="operator" id="percentage" data-type="operator" value="%">&#37</button>
+                        <button class="operator" id="divide" data-type="operator" value="/">&#247</button>
+                    </div>
+                    <div class="row" id="row2">
+                        <button class="digit" id="digit7" data-type="number" value="7">7</button>
+                        <button class="digit" id="digit8" data-type="number" value="8">8</button>
+                        <button class="digit" id="digit9" data-type="number" value="9">9</button>
+                        <button class="operator" id="multiply" data-type="operator" value="x">&#215</button>
+                    </div>
+                    <div class="row" id="row3">
+                        <button class="digit" id="digit4" data-type="number" value="4">4</button>
+                        <button class="digit" id="digit5" data-type="number" value="5">5</button>
+                        <button class="digit" id="digit6" data-type="number" value="6">6</button>
+                        <button class="operator" id="multiply" data-type="operator" value="-">&#45</button>
+                    </div>
+                    <div class="row" id="row4">
+                        <button class="digit" id="digit1" data-type="number" value="1">1</button>
+                        <button class="digit" id="digit2" data-type="number" value="2">2</button>
+                        <button class="digit" id="digit3" data-type="number" value="3">3</button>
+                        <button class="operator" id="multiply" data-type="operator" value="+">&#43</button>
+                    </div>
+                    <div class="row" id="row5">
+                        <button class="digit" id="digit0" data-type="number" value="0">0</button>
+                        <button class="decimal" id="decimal" data-type="decimal" value=".">.</button>
+                        <button class="operator" id="equals" data-type="equals" value="=">&#61</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Lorenzo Cane &#127279; <script>document.write(new Date().getFullYear());</script></p>
+            </div>
+        </div>
+
+        <script src="calculator.js"></script>
+    </body>
+
+</html>

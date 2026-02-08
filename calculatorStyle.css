@@ -70,8 +70,8 @@ Last version: 20/01/2026
 .row{
     display: grid;
     height: 100%;
-    grid-gap: 0.7rem;
-    padding: 0.8rem;
+    grid-gap: 0.5rem;
+    padding: 0.5rem 0.3rem;
     grid-template-columns: repeat(4, 1fr);
     background: #E6E6E6;
 }

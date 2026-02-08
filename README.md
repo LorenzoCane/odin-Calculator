@@ -20,4 +20,4 @@ Calculator will store 3 variables: first number, operatio, second number. Calcul
 Use some logic to deal with decimal input.
 
 ## Live Preview
-You can see how my calculator works at : *A link will be available when the whole code will be ok*.
+You can see how my calculator works using [GitHub Page](https://lorenzocane.github.io/odin-Calculator/).

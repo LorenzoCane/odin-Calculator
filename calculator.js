@@ -55,6 +55,7 @@ let operatorsMap = {
 // ======================================================
 // FUNCTIONS
 
+// Check lenght, concatenates the user input to the current value and returns the new value.
 function updateValue(currentValue, userInput){
     if (currentValue.length >= maxDigits){
         alert('Maximum number of digits reached');
@@ -64,11 +65,14 @@ function updateValue(currentValue, userInput){
     return newValue
 }
 
+// Main function, takes the two values and the operator, checks if they are valid and returns the result of the operation.
 function operate(firstValue, secondValue, operatorValue){
     if (firstValue === '' || secondValue === '' || operatorValue === ''){
+        // Missing values check.
         alert('Please insert two values and an operator before pressing equals');
     }
     if (secondValue === '0' && operatorValue === '/'){
+        // Division by zero, reset the calculator and alert the user.
         cleanAll();
         log('Division by zero');
         alert('Division by zero is not allowed. Press OK to reset the calculator');
@@ -84,10 +88,12 @@ function operate(firstValue, secondValue, operatorValue){
     return result.toString();
 }
 
+// Updates the display with the current values and operator.
 function updateDisplay(value){
     userInput.textContent = firstValue + "" + operatorValue + "" +  secondValue;
 }
 
+// Utility functions to check if the second value is present
 function checkSecondValue(){
     if (secondValue === ''){
         return false;
@@ -96,6 +102,7 @@ function checkSecondValue(){
     }
 }
 
+// Utility function to check if the current value already has a decimal point, to prevent multiple decimals in the same number.
 function checkDecimal(currentValue){
     if (currentValue.includes('.')){
         return true;
